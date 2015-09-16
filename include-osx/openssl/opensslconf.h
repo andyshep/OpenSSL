@@ -110,8 +110,8 @@ extern "C" {
 
 #if !(defined(VMS) || defined(__VMS)) /* VMS uses logical names instead */
 #if defined(HEADER_CRYPTLIB_H) && !defined(OPENSSLDIR)
-#define ENGINESDIR "/tmp/openssl-1.0.2c-i386/lib/engines"
-#define OPENSSLDIR "/tmp/openssl-1.0.2c-i386"
+#define ENGINESDIR "/tmp/openssl-1.0.2d-i386/lib/engines"
+#define OPENSSLDIR "/tmp/openssl-1.0.2d-i386"
 #endif
 #endif
 
@@ -206,7 +206,7 @@ extern "C" {
 #endif
 
 #if defined(DES_RISC1) && defined(DES_RISC2)
-YOU SHOULD NOT HAVE BOTH DES_RISC1 AND DES_RISC2 DEFINED!!!!!
+#error YOU SHOULD NOT HAVE BOTH DES_RISC1 AND DES_RISC2 DEFINED!!!!!
 #endif
 
 /* Unroll the inner loop, this sometimes helps, sometimes hinders.
